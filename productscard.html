@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BellevilleDental.Com</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style1.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+     <!-- <link href="img/favicon.ico" rel="icon"> -->
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+        body {
+            padding-top: 56px;
+            /* Adjust the top padding to match the height of your navbar */
+        }
+        
+        .custom-navbar {
+            background-color: #091E3E;
+            /* Blue color, adjust as needed */
+            padding: 14px 0;
+            margin-right:14;
+            margin-left: 14;
+            /* Adjust top and bottom padding */
+        }
+
+        
+        .custom-navbar .navbar-brand,
+        .custom-navbar .navbar-nav .nav-link {
+            color: #fff;
+            padding-left: 20px;
+            
+        }
+
+        .custom-navbar .navbar-toggler-icon {
+            background-color: #fff;
+            /* White color for the toggler icon, adjust as needed */
+        }
+
+        .carousel-item {
+            height: 600px;
+            background-color: #091E3E;
+            transition: 1s;
+            /* Set the height as needed */
+        }
+        
+        .icon-container {
+            display: flex;
+            align-items: center; /* Align items vertically in the center */
+            
+
+        }
+
+        /* Style the icon and text */
+        .icon-container a {
+            color: white; /* Text color */
+            text-decoration: none; 
+            display: flex;
+            align-items: center; 
+
+        }
+
+        .icon-container h1 {
+            margin: 0;
+            color: white; /* Initial text color */
+            transition: color 0.3s ease-in-out; /* Smooth transition for text color */
+            padding-left: 10px; /* Add padding between icon and text */
+            
+        }
+
+        .icon-container i {
+            color: white; /* Icon color */
+            margin-right: 5px; /* Add space between the icon and text */
+            transition: color 0.3s ease-in-out; /* Smooth transition for icon color */
+        }
+
+        
+
+        /* font in slider images */
+        h1,
+        h2,
+        .font-weight-bold {
+            font-weight: 700 !important;
+        }
+
+        h3,
+        h4,
+        .font-weight-semi-bold {
+            font-weight: 600 !important;
+        }
+
+        h5,
+        h6,
+        .font-weight-medium {
+            font-weight: 500 !important;
+        }
+
+        /* for appoinment and contact button */
+        .btn {
+            font-family: 'Jost', sans-serif;
+            font-weight: 600;
+            transition: .5s;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .carousel-caption {
+            /* Blue background color with some transparency */
+            color: #ffffff;
+            /* White text color */
+        }
+
+        /* slide pic */
+        .w-100 {
+            opacity: 0.5;
+            transition: 2s;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .horizontal-divs {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f8f9fa;
+            /* Set a background color for the container (optional) */
+            padding: 20px;
+            /* Add padding to the container (optional) */
+        }
+
+        .horizontal-div {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            box-sizing: border-box;
+        }
+
+
+        /* .navbar-nav {
+            float: right;
+            padding-left: 700px;
+        } */
+
+        .nav-link {
+            font-size: large;
+        }
+        
+        .zoomIn:hover img {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .zoomIn img {
+        transition: transform 0.3s ease-in-out;
+    }
+    /* .position-absolute {
+        opacity: 35;
+        transition: transform 0.3s ease-in;
+    } */
+
+    .twentytwenty-container:hover img {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .twentytwenty-container img {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .navbar-nav .nav-item .nav-link {
+    color: white; /* Change the default color */
+    transition: color 0.3s; /* Add a transition for smooth color change */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Change the color on hover */
+}
+
+#scrollTopbtn{
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+            background-color: #3498db;
+            color: white;
+            border:none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        #scrollTopbtn:hover{
+            background-color: #3498db;
+        }
+   
+    </style>
+</head>
+
+<body>
+   
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+        <div class="container">
+            <div class="icon-container"><a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0 white" ><i class="fas fa-tooth me-2"></i>Belleville Dental</h1>
+            </a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galleryo.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html" style="white-space: nowrap;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appoinment.html" style="white-space: nowrap;">Appointment</a>
+                    </li>>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <!-- Hero Start -->
+   <div class="container-fluid py-5 hero-header mb-5" style="background-color: #091e3e;">
+    <div class="row py-3">
+        <div class="col-12 text-center">
+            <h1 class="display-3 text-white animated zoomIn">Products</h1>
+            <a href="index.html" class="btn btn-secondary py-md-3 px-md-5 "
+            style="background-color: #007bff;">Home</a>
+            <a href="service.html" class="btn btn-secondary py-md-3 px-md-5 "
+            style="background-color: #F57E57;">services</a>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+    <!-- Product Start -->
+    <div class="container mt-5">
+        <div class="input-group mb-3">
+          <input type="text" id="searchInput" class="form-control" placeholder="search products">
+        </div>
+
+    <div class="container"> 
+        <div class="row g-5">
+            <div class="col-lg-3">
+                <div class="card" data-name="Teeth Braces">
+                    <img src="img/teeth braces.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                      <h5 class="card-title">Teeth Braces</h5>
+                      <p class="card-text">All Color Available & Also Its Sizes Making Still Wires</p>
+                      <p class="card-text">Rating: <span id="rating1">0</span></p>
+                      <button class="btn btn-primary rateButton" data-cardid="1">Rate</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" data-name="Teeth Whitener">
+                    <img src="img/crest3.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                      <h5 class="card-title">Teeth Whitener</h5>
+                      <p class="card-text">Non-Harmful Includes Jell & Laser Lightning</p>
+                      <p class="card-text">Rating: <span id="rating2">0</span></p>
+                      <button class="btn btn-primary rateButton" data-cardid="2">Rate</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" data-name="Teeth Repair Kit" >
+                    <img src="img/repair3.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                      <h5 class="card-title">Teeth Repair Kit</h5>
+                      <p class="card-text">Transparent Balls Making With Silicone Jell</p>
+                      <p class="card-text">Rating: <span id="rating3">0</span></p>
+                      <button class="btn btn-primary rateButton" data-cardid="3">Rate</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card" data-name="Teeth Brushes">
+                    <img src="img/toothbrush1.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                      <h5 class="card-title">Tooth Brushes</h5>
+                      <p class="card-text">All Color Available & Also Its Sizes Making Soft Fiber</p>
+                      <p class="card-text">Rating: <span id="rating4">0</span></p>
+                      <button class="btn btn-primary rateButton" data-cardid="4">Rate</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product End -->
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-transparent p-5">
+            </div>
+        </div>
+    </div> 
+    <!-- Newsletter End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-light py-4" style="background: #091e3e;" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About
+                            Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                            Services</a>
+                        <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <a class="text-light" href="faq.html"><i class="bi bi-arrow-right text-primary me-2"></i>FAQ</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Block-17 FB-Area Karachi,Pakistan</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+92 3468216656</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                            href="https://www.facebook.com/profile.php?id=100093988747172&mibextid=LQQJ4d"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                            href="https://instagram.com/ofc._.ahmed?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="index.html">Belleville
+                            Dental</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white border-bottom"
+                            href="https://instagram.com/ofc._.ahmed?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr ">A.A-Coderz</a><br>
+                        Manage By <a class="text-white border-bottom"
+                            href="https://instagram.com/ofc._.ahmed?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr ">Team
+                            A.A-Corderz</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+     <!-- Scroll Btn Start -->
+     <button id="scrollTopbtn">↑</button>
+     <!-- Scroll Btn End-->
+
+    <!-- Add Bootstrap JS and Popper.js before the closing body tag -->
+    <!-- Add Bootstrap JS, Popper.js, and jQuery before the closing body tag -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function () {
+  // Function to get the rating from localStorage
+  function getRatingFromLocalStorage(cardId) {
+    const ratingKey = "rating" + cardId;
+    const storedRating = localStorage.getItem(ratingKey);
+    return storedRating ? parseInt(storedRating, 10) : 0;
+  }
+
+  // Initialize ratings from localStorage on page load
+  $(".rating").each(function () {
+    const cardId = $(this).data("cardid");
+    const rating = getRatingFromLocalStorage(cardId);
+    $(this).text(rating);
+  });
+
+  // Add a click event listener to all rate buttons
+  $(".rateButton").click(function () {
+    const cardId = $(this).data("cardid");
+    const ratingElement = $("#rating" + cardId);
+
+    // Increment the rating for the clicked card by 1 on the client side
+    const currentRating = parseInt(ratingElement.text(), 10);
+    const newRating = currentRating + 1;
+    ratingElement.text(newRating);
+
+    // Store the new rating in localStorage
+    const ratingKey = "rating" + cardId;
+    localStorage.setItem(ratingKey, newRating);
+  });
+});
+    </script>
+
+
+<!-- Search Filter Script -->
+<script>
+    $('#searchInput').on('input', function () {
+      const query = $(this).val().toLowerCase();
+  
+      $('.card').each(function () {
+        const productName = $(this).data('name').toLowerCase();
+        if (productName.includes(query)) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
+    });
+  </script>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+   <script>
+       $(document).ready(function(){
+           $(window).scroll(function(){
+               if($(this).scrollTop() > 100){
+                   $('#scrollTopbtn').fadeIn();
+               }else{
+                   $('#scrollTopbtn').fadeOut();
+               }
+           });
+   
+           $('#scrollTopbtn').click(function(){
+               $('html,body').animate({scrollTop : 0}, 800);
+           });
+       });
+   
+   
+   </script>
+</body>
+</html>

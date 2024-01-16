@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BellevilleDental.Com</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style1.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 56px;
+            /* Adjust the top padding to match the height of your navbar */
+        }
+
+        .custom-navbar {
+            background-color: #091E3E;
+            /* Blue color, adjust as needed */
+            padding: 14px 0;
+            margin-right: 14;
+            margin-left: 14;
+            /* Adjust top and bottom padding */
+        }
+
+
+        .custom-navbar .navbar-brand,
+        .custom-navbar .navbar-nav .nav-link {
+            color: #fff;
+            padding-left: 20px;
+
+        }
+
+        .custom-navbar .navbar-toggler-icon {
+            background-color: #fff;
+            /* White color for the toggler icon, adjust as needed */
+        }
+
+        .carousel-item {
+            height: 600px;
+            background-color: #091E3E;
+            transition: 1s;
+            /* Set the height as needed */
+        }
+
+        .icon-container {
+            display: flex;
+            align-items: center;
+            /* Align items vertically in the center */
+
+
+        }
+
+        /* Style the icon and text */
+        .icon-container a {
+            color: white;
+            /* Text color */
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .icon-container h1 {
+            margin: 0;
+            color: white;
+            /* Initial text color */
+            transition: color 0.3s ease-in-out;
+            /* Smooth transition for text color */
+            padding-left: 10px;
+            /* Add padding between icon and text */
+
+        }
+
+        .icon-container i {
+            color: white;
+            /* Icon color */
+            margin-right: 5px;
+            /* Add space between the icon and text */
+            transition: color 0.3s ease-in-out;
+            /* Smooth transition for icon color */
+        }
+
+
+
+        /* font in slider images */
+        h1,
+        h2,
+        .font-weight-bold {
+            font-weight: 700 !important;
+        }
+
+        h3,
+        h4,
+        .font-weight-semi-bold {
+            font-weight: 600 !important;
+        }
+
+        h5,
+        h6,
+        .font-weight-medium {
+            font-weight: 500 !important;
+        }
+
+        /* for appoinment and contact button */
+        .btn {
+            font-family: 'Jost', sans-serif;
+            font-weight: 600;
+            transition: .5s;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .carousel-caption {
+            /* Blue background color with some transparency */
+            color: #ffffff;
+            /* White text color */
+        }
+
+        /* slide pic */
+        .w-100 {
+            opacity: 0.5;
+            transition: 2s;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .horizontal-divs {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f8f9fa;
+            /* Set a background color for the container (optional) */
+            padding: 20px;
+            /* Add padding to the container (optional) */
+        }
+
+        .horizontal-div {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            box-sizing: border-box;
+        }
+
+        .nav-link {
+            font-size: large;
+        }
+
+        .zoomIn:hover img {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .zoomIn img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* .position-absolute {
+        opacity: 35;
+        transition: transform 0.3s ease-in;
+    } */
+
+        .twentytwenty-container:hover img {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .twentytwenty-container img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* my work */
+        /* for cover adjustment for pictures */
+        .image-container {  
+            position: relative;
+            text-align: center;
+            /* Center the content within each container */
+            margin: 0 10px;
+            /* Adjust the margin between containers if needed */
+            overflow: hidden;
+            /* Hide overflowing content from the cover */
+        }
+
+
+
+        .image-container:hover .image-cover {
+            top: 0;
+            /* Move the cover down on hover for image hover */
+        }
+
+/* for line 1 */
+        .line-1 {
+            display: flex;
+            justify-content: center;
+            /* Horizontally center the content */
+            align-items: center;
+            /* Vertically center the content */
+            height: 100vh;
+            /* Adjust the height as needed */
+        }
+        .main-container {
+            display: flex;
+            justify-content: space-around;
+            /* Adjust this based on your layout preference */
+            align-items: center;
+            /* Align items vertically in the center */
+        }
+
+        .image-cover {
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            top: -100%;
+            /* Initially position cover above the container */
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Set the height of the cover as 100% */
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Set a background color with some transparency */
+            text-align: center;
+            /* Center the text within the container */
+            padding: 10px;
+            /* Add padding to the cover if needed */
+            box-sizing: border-box;
+            transition: top 0.4s;
+            /* Add a transition for smooth effect */
+        }
+
+        /* for line 2 */
+        .line-2 {
+            display: flex;
+            justify-content: center;
+            /* Horizontally center the content */
+            align-items: center;
+            /* Vertically center the content */
+            height: 100vh;
+            /* Adjust the height as needed */
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-around;
+            /* Adjust this based on your layout preference */
+            align-items: center;
+            /* Align items vertically in the center */
+        }
+        .image-cover {
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            top: -100%;
+            /* Initially position cover above the container */
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Set the height of the cover as 100% */
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Set a background color with some transparency */
+            text-align: center;
+            /* Center the text within the container */
+            padding: 10px;
+            /* Add padding to the cover if needed */
+            box-sizing: border-box;
+            transition: top 0.4s;
+            /* Add a transition for smooth effect */
+        }
+
+/* for line 3 */
+        .line-3 {
+            display: flex;
+            justify-content: center;
+            /* Horizontally center the content */
+            align-items: center;
+            /* Vertically center the content */
+            height: 100vh;
+            /* Adjust the height as needed */
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-around;
+            /* Adjust this based on your layout preference */
+            align-items: center;
+            /* Align items vertically in the center */
+        }
+        .image-cover {
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            top: -100%;
+            /* Initially position cover above the container */
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Set the height of the cover as 100% */
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Set a background color with some transparency */
+            text-align: center;
+            /* Center the text within the container */
+            padding: 10px;
+            /* Add padding to the cover if needed */
+            box-sizing: border-box;
+            transition: top 0.4s;
+            /* Add a transition for smooth effect */
+        }
+/* for line 4 */
+        .line-4 {
+            display: flex;
+            justify-content: center;
+            /* Horizontally center the content */
+            align-items: center;
+            /* Vertically center the content */
+            height: 100vh;
+            /* Adjust the height as needed */
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-around;
+            /* Adjust this based on your layout preference */
+            align-items: center;
+            /* Align items vertically in the center */
+        }
+       /* for adjust the size of images of line 4 */
+        .image-container {
+            width: 400px;
+            /* Adjust the width as needed */
+            height: 300px;
+            /* Adjust the height as needed */
+            overflow: hidden;
+            /* Ensure the container doesn't overflow if the image size is larger */
+            margin: 10px;
+            /* Adjust the margin between images as needed */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensure the image covers the entire container */
+            margin-left: 15px;
+
+        }
+
+        .image-cover {
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            top: -100%;
+            /* Initially position cover above the container */
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Set the height of the cover as 100% */
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Set a background color with some transparency */
+            text-align: center;
+            /* Center the text within the container */
+            padding: 10px;
+            /* Add padding to the cover if needed */
+            box-sizing: border-box;
+            transition: top 0.4s;
+            /* Add a transition for smooth effect */
+        }
+
+        /* Add negative margin to remove the gap between lines */
+        .line-1, .line-2, .line-3 {
+            margin-bottom: -390px; /* Adjust the negative margin as needed */
+            padding: 10px;
+        }
+
+
+
+        .main-line{
+            margin-top: -165px;
+            margin-bottom: -110px;
+
+        }
+
+
+
+        .main-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between images */
+}
+
+.image-container {
+    flex: 1 0 calc(33.33% - 20px); /* Adjust width for 3 images in a row */
+    /* Add other necessary styling for image containers */
+}
+
+.main-line {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    margin-bottom: 20px; /* Adjust the bottom margin as needed */
+}
+
+.line-1{
+    margin-bottom: -402px;
+    margin-top: 2px;
+}
+
+.line-2{
+    margin-bottom: -402px;
+}
+
+.line-3{
+    margin-bottom: -402px;
+}
+
+.line-4{
+    margin-bottom: 5px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white; /* Change the default color */
+    transition: color 0.3s; /* Add a transition for smooth color change */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Change the color on hover */
+}
+
+#scrollTopbtn{
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+            background-color: #3498db;
+            color: white;
+            border:none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        #scrollTopbtn:hover{
+            background-color: #3498db;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+        <div class="container">
+            <div class="icon-container"><a href="index.html" class="navbar-brand p-0">
+                    <h1 class="m-0 white"><i class="fas fa-tooth me-2"></i>Belleville Dental</h1>
+                </a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="white-space: nowrap;">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productscard.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appoinment.html" style="white-space: nowrap;">Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br><br>
+    <!-- Hero Start -->
+    <div class="container-fluid py-5 hero-header mb-5" style="background-color: #091e3e;">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Gallery</h1>
+                <a href="service.html" class="btn btn-secondary py-md-3 px-md-5 "
+                style="background-color: #007bff;">Services</a>
+                <a href="productscard.html" class="btn btn-secondary py-md-3 px-md-5 "
+                style="background-color: #F57E57;">Products</a>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <div class="main-line" style="display: flex;">
+        <div class="line-1">
+            <div class="main-container">
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/service-1.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Root canals offer several benefits, such as alleviating severe tooth pain, saving a damaged tooth from extraction.</h2>
+                    </div>
+                </div>
+
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/toothbrush1.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Regular tooth brushing brings a host of benefits, including preventing cavities by removing plaque.</h2>
+                    </div>
+                </div>
+
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/t8.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Mouthwash, when used as part of a oral hygiene routine, can provide several benefits, including reducing gingivitis.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd line -->
+        <div class="line-2" style="display: flex;">
+            <div class="main-container">
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/team-5.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Dental surgery, when necessary, can offer various benefits such as resolving severe oral health issues like impacted teeth.</h2>
+                    </div>
+                </div>
+
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/rootcanal.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Cavities can lead to several disadvantages, including tooth pain or sensitivity, difficulty chewing.</h2>
+                    </div>
+                </div>
+
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/dental surgery.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Regular dental check-ups offer numerous benefits, such as early detection of dental issues like cavities, gum disease.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3rd line -->
+        <div class="line-3" style="display: flex;">
+            <div class="main-container">
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/crest3.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Using Crest whitening products can offer benefits like effectively removing surface stains, brightening teeth.</h2>
+                    </div>
+                </div>
+
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/transparentbraces.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Silicone transparent teeth braces, like Invisalign, offer various benefits,being removable for eating and cleaning.</h2>
+                    </div>
+                </div>
+
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/service-4.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Teeth cleaning, whether done at home or by a dental professional, provides numerous benefits such as removing plaque and tartar buildup.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 4th line -->
+        <div class="line-4" style="display: flex;">
+            <div class="main-container">
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/repair3.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Temporary tooth repair kits can offer immediate benefits by providing a quick fix for chipped, cracked, or lost fillings.</h2>
+                    </div>
+                </div>
+
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/teeth braces.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Steel braces, though more noticeable compared to newer options like clear aligners, offer several benefits in orthodontic treatment.</h2>
+                    </div>
+                </div>
+
+                <div class="image-container" onmouseover="handleHover(this)" onmouseout="handleHover(this)">
+                    <img src="img/teeth filling.jpg" alt="">
+                    <div class="image-cover">
+                        <h2>Teeth filing, also known as dental contouring or reshaping, can offer benefits like improving the appearance of teeth by correcting minor chips.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Start -->
+    <div class="container-fluid text-light py-4" style="background: #091e3e;" data-wow-delay="0.3s"
+        style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>About
+                            Us</a>
+                        <a class="text-light mb-2" href="service.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Our
+                            Services</a>
+                        <a class="text-light" href="contact.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                         <a class="text-light" href="faq.html"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>FAQ</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Block-17 FB-Area Karachi,Pakistan</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+92 3468216656</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                            href="https://www.facebook.com/profile.php?id=100093988747172&mibextid=LQQJ4d"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                            href="https://instagram.com/ofc._.ahmed?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="index.html">Belleville
+                            Dental</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white border-bottom"
+                            href="https://instagram.com/ofc._.ahmed?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr ">A.A-Coderz</a><br>
+                        Manage By <a class="text-white border-bottom"
+                            href="https://instagram.com/ofc._.ahmed?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr ">Team
+                            A.A-Corderz</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+        <!-- Scroll Btn Start -->
+        <button id="scrollTopbtn">↑</button>
+        <!-- Scroll Btn End-->
+
+    <!-- Add Bootstrap JS and Popper.js before the closing body tag -->
+    <!-- Add Bootstrap JS, Popper.js, and jQuery before the closing body tag -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $('#scrollTopbtn').fadeIn();
+            }else{
+                $('#scrollTopbtn').fadeOut();
+            }
+        });
+
+        $('#scrollTopbtn').click(function(){
+            $('html,body').animate({scrollTop : 0}, 800);
+        });
+    });
+</script>
+
+<script>
+    function handleHover(container) {
+        const cover = container.querySelector('image-cover');
+        if (event.type === 'mouseover') {
+            cover.style.bottom = '0';
+        } else if (event.type === 'mouseout') {
+            cover.style.bottom = '100%';
+        }
+    };
+</script>
+</html>

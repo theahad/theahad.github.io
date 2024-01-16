@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BellevilleDental.Com</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style1.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+         <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+     <!-- <link href="img/favicon.ico" rel="icon"> -->
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<style>
+        body {
+            padding-top: 56px;
+            /* Adjust the top padding to match the height of your navbar */
+        }
+        
+        .custom-navbar {
+            background-color: #091E3E;
+            /* Blue color, adjust as needed */
+            padding: 14px 0;
+            margin-right:14;
+            margin-left: 14;
+            /* Adjust top and bottom padding */
+        }
+
+        
+        .custom-navbar .navbar-brand,
+        .custom-navbar .navbar-nav .nav-link {
+            color: #fff;
+            padding-left: 20px;
+            
+        }
+
+        .custom-navbar .navbar-toggler-icon {
+            background-color: #fff;
+            /* White color for the toggler icon, adjust as needed */
+        }
+
+        .carousel-item {
+            height: 600px;
+            background-color: #091E3E;
+            transition: 1s;
+            /* Set the height as needed */
+        }
+        
+        .icon-container {
+            display: flex;
+            align-items: center; /* Align items vertically in the center */
+            
+
+        }
+
+        /* Style the icon and text */
+        .icon-container a {
+            color: white; /* Text color */
+            text-decoration: none; 
+            display: flex;
+            align-items: center; 
+
+        }
+
+        .icon-container h1 {
+            margin: 0;
+            color: white; /* Initial text color */
+            transition: color 0.3s ease-in-out; /* Smooth transition for text color */
+            padding-left: 10px; /* Add padding between icon and text */
+            
+        }
+
+        .icon-container i {
+            color: white; /* Icon color */
+            margin-right: 5px; /* Add space between the icon and text */
+            transition: color 0.3s ease-in-out; /* Smooth transition for icon color */
+        }
+
+        
+
+        /* font in slider images */
+        h1,
+        h2,
+        .font-weight-bold {
+            font-weight: 700 !important;
+        }
+
+        h3,
+        h4,
+        .font-weight-semi-bold {
+            font-weight: 600 !important;
+        }
+
+        h5,
+        h6,
+        .font-weight-medium {
+            font-weight: 500 !important;
+        }
+
+        /* for appoinment and contact button */
+        .btn {
+            font-family: 'Jost', sans-serif;
+            font-weight: 600;
+            transition: .5s;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .carousel-caption {
+            /* Blue background color with some transparency */
+            color: #ffffff;
+            /* White text color */
+        }
+
+        /* slide pic */
+        .w-100 {
+            opacity: 0.5;
+            transition: 2s;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .horizontal-divs {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f8f9fa;
+            /* Set a background color for the container (optional) */
+            padding: 20px;
+            /* Add padding to the container (optional) */
+        }
+
+        .horizontal-div {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            box-sizing: border-box;
+        }
+
+
+        /* .navbar-nav {
+            float: right;
+            padding-left: 700px;
+        } */
+
+        .nav-link {
+            font-size: large;
+        }
+        
+        .zoomIn:hover img {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .zoomIn img {
+        transition: transform 0.3s ease-in-out;
+    }
+    /* .position-absolute {
+        opacity: 35;
+        transition: transform 0.3s ease-in;
+    } */
+
+    .twentytwenty-container:hover img {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .twentytwenty-container img {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .navbar-nav .nav-item .nav-link {
+    color: white; /* Change the default color */
+    transition: color 0.3s; /* Add a transition for smooth color change */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Change the color on hover */
+}
+
+#scrollTopbtn{
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+            background-color: #3498db;
+            color: white;
+            border:none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        #scrollTopbtn:hover{
+            background-color: #3498db;
+        }
+
+    </style>
+</head>
+
+<body>
+   
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+        <div class="container">
+            <div class="icon-container"><a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0 white" ><i class="fas fa-tooth me-2"></i>Belleville Dental</h1>
+            </a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about1">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galleryo.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact1" style="white-space: nowrap;">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html" style="white-space: nowrap;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appoinment.html" style="white-space: nowrap;">Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Carousel/Slider -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h5 class="text-white text-uppercase mb-3">Keep Your Teeth Healthy</h5>
+                        <h1 class="display-1 text-white mb-md-4 ">Welcome to our Belleville Dental Care</h1>
+                        <a href="appoinment.html" class="btn btn-secondary py-md-3 px-md-5 "
+                        style="background-color: #007bff;">Appointment
+                        Us</a>
+                        <a href="contact.html" class="btn btn-secondary py-md-3 px-md-5 "
+                            style="background-color: #F57E57;">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h5 class="text-white text-uppercase mb-3 animated slideInDown">Your Path to a Bright and
+                            Healthy Smile</h5>
+                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">Join us in this dental adventure, and
+                            let's create a brighter Teeth</h1>
+                            <a href="appoinment.html" class="btn btn-secondary py-md-3 px-md-5 "
+                            style="background-color: #007bff;">Appointment
+                            Us</a>
+                        <a href="contact.html" class="btn btn-secondary py-md-3 px-md-5"
+                            style="background-color: #F57E57;">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Previous and Next buttons -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- <span class="sr-only">Previous</span> -->
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <!-- <span class="sr-only">Next</span> -->
+        </a>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- ... (Your slider content goes here) ... -->
+    </div>
+
+   
+
+    <div class="container-fluid banner mb-5">
+        <div class="container">
+            <div class="row gx-0">
+                <div class="col-lg-4 ">
+                    <div class="d-flex flex-column p-5" style="height: 300px; background-color: #06A3DA;">
+                        <h3 class="text-white mb-3">Opening Hours</h3>
+                        <div class="d-flex justify-content-between text-white mb-3">
+                            <h6 class="text-white mb-0">Mon - Fri</h6>
+                            <p class="mb-0"> 8:00am - 9:00pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between text-white mb-3">
+                            <h6 class="text-white mb-0">Saturday</h6>
+                            <p class="mb-0"> 8:00am - 7:00pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between text-white mb-3">
+                            <h6 class="text-white mb-0">Sunday</h6>
+                            <p class="mb-0"> 8:00am - 5:00pm</p>
+                        </div>
+                        <a class="btn btn-light" href="appoinment.html">Appointment</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class=" flex-column p-5" style="height: 300px; background-color: #091E3E">
+                        <h3 class="text-white mb-3">Search A Doctor</h3>
+                        <div class="date mb-3" id="date" data-target-input="nearest">
+                            <input type="text" class="form-control bg-light border-0 datetimepicker-input"
+                                placeholder="Appointment Date" data-target="#date" data-toggle="datetimepicker"
+                                style="height: 40px;">
+                        </div>
+                        <select class="form-select bg-light border-0 mb-3" style="height: 40px;">
+                            <option selected>Select A Service</option>
+                            <option value="1">Root Canal</option>
+                            <option value="2">Teeth Braces</option>
+                            <option value="3">Teeth Whitening</option>
+                        </select>
+                        <a class="btn btn-light" href="service.html">Search Doctor</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column p-5" style="height: 300px; background-color: #F57E57;">
+                        <h3 class="text-white mb-3">Make Appointment</h3>
+                        <p class="text-white">Don't delay in taking the first step towards a healthy smile, book your
+                            appointment today and let us take care of your dental needs.</p>
+                        <h2 class="text-white mb-0">+92 3468216656</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Start -->
+    <div id="about1">
+            <!-- Hero Start -->
+    <div class="container-fluid py-5 hero-header mb-5" style="background-color: #091E3E;">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">About Us</h1>
+                <a href="service.html" class="btn btn-secondary py-md-3 px-md-5 "
+            style="background-color: #007bff;">Services</a>
+            <a href="appoinment.html" class="btn btn-secondary py-md-3 px-md-5 "
+            style="background-color: #F57E57;">Appointment</a>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <div class="section-title mb-4">
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
+                            <h1 class="display-5 mb-0">The World's Best Dental Clinic That You Can Trust</h1>
+                        </div>
+                        <h4 class="text-body fst-italic mb-4">A dental clinic that prioritizes patient trust is a sanctuary
+                            of compassion and expertise, where every smile is nurtured with personalized care and
+                            transparent communication, ensuring lasting oral health and confidence.</h4>
+                        <p class="mb-4">Regular teeth check-ups help prevent dental problems and maintain a healthy, radiant
+                            smile.</p>
+                        <div class="row g-3">
+                            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Best Clinic</h5>
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Professional Staff</h5>
+                            </div>
+                            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>24/7 Opened</h5>
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Fair Prices</h5>
+                            </div>
+                        </div>
+                        <a href="appoinment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
+                            data-wow-delay="0.6s">Make Appointment</a>
+                    </div>
+                    <div class="col-lg-5" style="min-height: 500px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute w-100 h-100 rounded wow z" src="img/about1.jpg"
+                                style="object-fit: cover; opacity: 50;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+      
+    <!-- Contact Start -->
+    <div id="contact1">
+        <!-- Hero Start -->
+    <div class="container-fluid py-5 hero-header mb-5" style="background-color: #091E3E;">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Contact Us</h1>
+                <a href="service.html" class="btn btn-secondary py-md-3 px-md-5 "
+            style="background-color: #007bff;">Services</a>
+            <a href="appoinment.html" class="btn btn-secondary py-md-3 px-md-5 "
+            style="background-color: #F57E57;">appoinment</a>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.1s">
+                        <div class="bg-light rounded h-100 p-5">
+                            <div class="section-title">
+                                <h5 class="position-relative d-inline-block text-primary text-uppercase">Contact Us</h5>
+                                <h1 class="display-6 mb-4">Feel Free To Contact Us</h1>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Our Office</h5>
+                                    <span>32-street Block 17 FB-Area, PAKISTAN </span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Email Us</h5>
+                                    <span>bellevilledental@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                                <div class="text-start">
+                                    <h5 class="mb-0">Call Us</h5>
+                                    <span>+92 3468216656</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.3s">
+                        <form id="contact-form">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name"
+                                        style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email"
+                                        style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject"
+                                        style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0 bg-light px-4 py-3" rows="5"
+                                        placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xl-4 col-lg-12 wow slideInUp" data-wow-delay="0.6s" style="overflow-x: hidden;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924237.7104807883!2d66.49591634347676!3d25.192983554843718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1698490798380!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <div id="service1">
+    <!-- Hero Start -->
+    <div class="container-fluid py-5 hero-header mb-5" style="background-color: #091E3E;">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Services</h1>
+                <a href="index.html" class="btn btn-secondary py-md-3 px-md-5 "
+                style="background-color: #007bff;">Home</a>
+                <a href="productscard.html" class="btn btn-secondary py-md-3 px-md-5 "
+                style="background-color: #F57E57;">Products</a>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+<!-- Service Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row g-5 mb-5">
+            <div class="col-lg-5" style="min-height: 400px;">
+                <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
+                    <img class="position-absolute w-100 h-100" src="img/before.jpg" style="object-fit: cover; opacity: 37;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-title mb-5">
+                    <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
+                    <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
+                        <div class="rounded-top overflow-hidden">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="position-relative bg-light rounded-bottom text-center p-4 ">
+                            <h5 class="m-0">Root Canal</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div class="rounded-top overflow-hidden">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <h5 class="m-0">Dental Implants</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-7">
+                <div class="row g-5">
+                    <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.3s">
+                        <div class="rounded-top overflow-hidden">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        </div>
+                        <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <h5 class="m-0">Teeth Braces</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
+                        <div class="rounded-top overflow-hidden">
+                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        </div>
+                        <div class="position-relative bg-light rounded-bottom text-center p-4">
+                            <h5 class="m-0">Teeth Whitening</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 service-item wow zoomIn" data-wow-delay="0.9s">
+                <div
+                    class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
+                    <h3 class="text-white mb-3">Make Appointment</h3>
+                    <p class="text-white mb-3">Don't delay in taking the first step towards a healthy smile, book
+                        your appointment today and let us take care of your dental needs.</p>
+                    <h2 class="text-white mb-0">+92 3468216656</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+<div class="row">
+    <!-- 1st card -->
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="img/teeth braces.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Teeth Braces</h5>
+                <p class="card-text">"Understanding Teeth Braces: A Comprehensive Overview"</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal1">View details</a>
+                <a href="#" class="btn btn-primary">Add to card</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd card -->
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="img/service-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Root Canal</h5>
+                <p class="card-text">"Exploring Root Canal Procedures: In-depth Insights"</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal2">View details</a>
+                <a href="#" class="btn btn-primary">Add to card</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3rd card -->
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="img/service-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Dental Implants</h5>
+                <p class="card-text">"Dental Implants: A Comprehensive Guide to Restoration and Oral Health"</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal3">View details</a>
+                <a href="#" class="btn btn-primary">Add to card</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modals -->
+<!-- Modal for Card 1 -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Details for Card 1</h5> -->
+            <p>Teeth braces are orthodontic devices used to straighten misaligned teeth and improve bite. They work by applying gentle pressure over time to gradually shift teeth into proper alignment. Benefits include enhanced dental aesthetics, improved bite functionality, reduced risk of dental issues like cavities or gum disease, easier cleaning and maintenance, and increased confidence with a beautiful smile. Braces can effectively address overcrowding, spacing issues, and bite irregularities, leading to long-term oral health improvements.</p>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/teeth braces.jpg" class="img-fluid" alt="Service 1">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal for Card 2 -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Details for Card 1</h5> -->
+            <p>A root canal is a dental procedure that involves removing infected or damaged pulp from within the tooth, cleaning, disinfecting, and sealing it. Benefits include alleviating severe tooth pain, preserving the natural tooth, preventing the spread of infection to surrounding areas, restoring normal biting and chewing function, and maintaining the tooth's structural integrity, avoiding extraction in many cases.</p>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/service-1.jpg" class="img-fluid" alt="Service 1">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+<!-- Modal content for Card 2, similar to Card 1 -->
+</div>
+
+<!-- Modal for Card 3 -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Details for Card 1</h5> -->
+            <p>Dental implants are artificial tooth roots surgically placed into the jawbone to support replacement teeth or bridges. Benefits include restored functionality for biting and chewing, enhanced aesthetics providing a natural look, improved speech, prevention of bone loss in the jaw, and long-term durability, often lasting a lifetime with proper care. They offer a stable, permanent solution for missing teeth without compromising neighboring teeth.</p>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/service-2.jpg" class="img-fluid" alt="Service 1">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+    <!-- Modal End -->
+
+     <!-- Newsletter Start -->
+     <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <div class="container">
+            <div class="bg-transparent p-5">
+            </div>
+        </div>
+    </div> 
+    <!-- Newsletter End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-light py-4" style="background: #091e3e;" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="#about1"><i class="bi bi-arrow-right text-primary me-2"></i>About
+                            Us</a>
+                        <a class="text-light mb-2" href="#service1"><i class="bi bi-arrow-right text-primary me-2"></i>Our
+                            Services</a>
+                        <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <a class="text-light" href="faq.html"><i class="bi bi-arrow-right text-primary me-2"></i>FAQ</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Block-17 FB-Area Karachi,Pakistan</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>bellevilledental@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+92 3468216656</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                            href="https://www.facebook.com/profile.php?id=100093988747172&mibextid=LQQJ4d"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded"
+                            href="https://instagram.com/ofc._.ahmed?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="index.html">Belleville
+                            Dental</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white border-bottom"
+                            href="https://instagram.com/ofc._.ahmed?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr ">A.A-Coderz</a><br>
+                        Manage By <a class="text-white border-bottom"
+                            href="https://instagram.com/ofc._.ahmed?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr ">Team
+                            A.A-Corderz</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll Btn Start -->
+    <button id="scrollTopbtn">↑</button>
+    <!-- Scroll Btn End-->
+
+    <!-- Content goes here -->
+
+    <!-- Add Bootstrap JS and Popper.js before the closing body tag -->
+    <!-- Add Bootstrap JS, Popper.js, and jQuery before the closing body tag -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 100){
+                    $('#scrollTopbtn').fadeIn();
+                }else{
+                    $('#scrollTopbtn').fadeOut();
+                }
+            });
+    
+            $('#scrollTopbtn').click(function(){
+                $('html,body').animate({scrollTop : 0}, 800);
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('#contact-form').on('submit', function(e){
+            e.preventDefault();
+            // swal('success', 'your form is successfully submited','success');
+            Swal.fire({
+  title: 'Do you want to save the changes?',
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: 'Save',
+  denyButtonText: `Don't save`,
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire('Saved!', '', 'success')
+  } else if (result.isDenied) {
+    Swal.fire('Changes are not saved', '', 'info')
+  }
+})
+        });
+    });
+</script>
+
+    
+</body>
+
+</html>
